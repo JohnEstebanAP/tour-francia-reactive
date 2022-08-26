@@ -9,7 +9,7 @@ import reactor.core.publisher.Mono;
 public class UpdateByIdTeamUseCase {
     private final TeamRepository repository;
 
-    public Mono<Team> updateTrainingLeague(String id, Team team) {
+    public Mono<Team> updateByIdTeam(String id, Team team) {
 
         return repository.update(id, team);
 

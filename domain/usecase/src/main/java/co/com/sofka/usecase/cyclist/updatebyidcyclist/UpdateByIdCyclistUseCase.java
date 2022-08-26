@@ -11,9 +11,9 @@ import reactor.core.publisher.Mono;
 public class UpdateByIdCyclistUseCase {
     private final CyclistRepository repository;
 
-    public Mono<Cyclist> updateCyclist(Integer id, Cyclist cyclist) {
-
-        return repository.updateCyclist(id, cyclist);
+    public Mono<Cyclist> updateCyclist(String id, Cyclist cyclist) {
+        Integer integerId = Integer.parseInt(id);
+        return repository.updateCyclist(integerId, cyclist);
 
     }
 }
