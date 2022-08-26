@@ -14,5 +14,5 @@ public interface TeamRepository {
 
     Mono<Void> deleteById(String id);
 
-    Mono<Team> updateTeam(String id, Team team);
+    Mono<Team> update(String id, Team team);
 }

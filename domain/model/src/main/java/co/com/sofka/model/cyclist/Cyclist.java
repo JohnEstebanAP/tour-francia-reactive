@@ -12,9 +12,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Cyclist {
- private String id;
- private Name name;
  private Integer competitorNumber;
+ private Name name;
  private String teamId;
  private String nationality;
 }

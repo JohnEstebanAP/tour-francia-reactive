@@ -11,7 +11,7 @@ public class UpdateByIdTeamUseCase {
 
     public Mono<Team> updateTrainingLeague(String id, Team team) {
 
-        return repository.updateTeam(id, team);
+        return repository.update(id, team);
 
     }
 }
