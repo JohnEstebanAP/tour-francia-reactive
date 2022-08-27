@@ -1,14 +1,16 @@
 package co.com.sofka.model.cyclist.valuesobject;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.Objects;
 
 @Data
+@NoArgsConstructor
 public class Name {
-  private final String fullName;
-  private final String fullLastName;
+  private String fullName;
+  private String fullLastName;
   
   public Name(String fullName, String fullLastName){
     this.fullName = Objects.requireNonNull(fullName);

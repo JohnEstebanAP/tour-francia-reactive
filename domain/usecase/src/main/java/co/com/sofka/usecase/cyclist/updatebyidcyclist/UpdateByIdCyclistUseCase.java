@@ -13,7 +13,7 @@ public class UpdateByIdCyclistUseCase {
 
     public Mono<Cyclist> updateCyclist(String id, Cyclist cyclist) {
         Integer integerId = Integer.parseInt(id);
-        return repository.updateCyclist(integerId, cyclist);
+        return repository.updateCyclist(id, cyclist);
 
     }
 }

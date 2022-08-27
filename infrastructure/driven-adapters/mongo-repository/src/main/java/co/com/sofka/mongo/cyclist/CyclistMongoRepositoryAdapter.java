@@ -3,7 +3,6 @@ package co.com.sofka.mongo.cyclist;
 import co.com.sofka.model.cyclist.Cyclist;
 import co.com.sofka.model.cyclist.gateways.CyclistRepository;
 import co.com.sofka.mongo.helper.AdapterOperations;
-import co.com.sofka.mongo.team.TeamDocument;
 import org.reactivecommons.utils.ObjectMapper;
 import org.springframework.stereotype.Repository;
 import reactor.core.publisher.Mono;
@@ -23,7 +22,7 @@ implements CyclistRepository
     }
 
     @Override
-    public Mono<Cyclist> updateCyclist(Integer id, Cyclist cyclist) {
+    public Mono<Cyclist> updateCyclist(String id, Cyclist cyclist) {
         return repository.save(
                 new CyclistDocument(
                         id,

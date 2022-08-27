@@ -18,7 +18,7 @@ import java.util.List;
 @AllArgsConstructor
 public class CyclistDocument {
     @Id
-    private Integer competitorNumber;
+    private String competitorNumber;
     private Name name;
     private String teamId;
     private String nationality;

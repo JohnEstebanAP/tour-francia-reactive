@@ -13,5 +13,5 @@ public interface CyclistRepository {
 
     Mono<Void> deleteById(String id);
 
-    Mono<Cyclist> updateCyclist(Integer id, Cyclist cyclist);
+    Mono<Cyclist> updateCyclist(String id, Cyclist cyclist);
 }
