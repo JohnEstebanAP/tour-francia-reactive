@@ -1,6 +1,5 @@
 package co.com.sofka.mongo.team;
 
-import co.com.sofka.model.cyclist.Cyclist;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -20,5 +19,5 @@ public class TeamDocument {
     private String id;
     private String name;
     private String country;
-    private List<Cyclist> cyclists;
+    private List<Integer> cyclists;
 }
