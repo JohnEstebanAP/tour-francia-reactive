@@ -19,5 +19,5 @@ public RouterFunction<ServerResponse> routerFunctionCyclist(HandlerCyclist handl
             .andRoute(GET("/api/cyclist/{id}"), handler::listenFindCyclistUseCase)
             .andRoute(PUT("/api/cyclist/{id}"), handler::listenUpdateCyclistUseCase)
             .andRoute(DELETE("/api/cyclist/{id}"), handler::listenDeleteCyclistUseCase);
-}
+    }
 }
