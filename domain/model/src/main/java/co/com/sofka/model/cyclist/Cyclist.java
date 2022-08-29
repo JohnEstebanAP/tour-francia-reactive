@@ -7,6 +7,18 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+
+/**
+ * [Class that models the basic structure of a cyclist object.]
+ *
+ * param competitorNumber String
+ * param name Name
+ * param teamId String
+ * param nationality String
+ *
+ * @author John Esteban Alvarez Piedrahita - esteban.ea145@gmail.com
+ * @version 1.0.0
+ */
 @Data
 @Builder(toBuilder = true)
 @NoArgsConstructor
