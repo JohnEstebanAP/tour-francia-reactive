@@ -69,4 +69,4 @@ Este módulo es el más externo de la arquitectura, es el encargado de ensamblar
 ![](https://github.com/JohnEstebanAP/tour-francia-reactive/blob/main/images/find%20all%20cyclist.png?raw=true)
 
 
-## Json file with Imsonia queries [clik](https://github.com/JohnEstebanAP/tour-francia-reactive/blob/main/query/tour-francia)
+## Json file with Imsonia queries [clik](https://github.com/JohnEstebanAP/tour-francia-reactive/tree/main/query)
