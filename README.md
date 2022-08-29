@@ -53,7 +53,7 @@ Este módulo es el más externo de la arquitectura, es el encargado de ensamblar
 ### Teams may only have a maximum of 8 cyclists
 ![](https://github.com/JohnEstebanAP/tour-francia-reactive/blob/main/images/save%20Team2.png?raw=true)
 
-### El id del team debe tener máximo 3 caracteres
+### The team id must have a maximum of 3 characters
 ![](https://github.com/JohnEstebanAP/tour-francia-reactive/blob/main/images/save%20cyclist4.png?raw=true)
 
 ### Save Cyclist
