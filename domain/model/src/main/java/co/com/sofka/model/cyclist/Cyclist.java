@@ -11,12 +11,7 @@ import lombok.NoArgsConstructor;
 /**
  * [Class that models the basic structure of a cyclist object.]
  *
- * param competitorNumber String
- * param name Name
- * param teamId String
- * param nationality String
- *
- * @author John Esteban Alvarez Piedrahita - esteban.ea145@gmail.com
+ * @author John Esteban Alvarez Piedrahita - john.alvarez@sofka.com.co
  * @version 1.0.0
  */
 @Data

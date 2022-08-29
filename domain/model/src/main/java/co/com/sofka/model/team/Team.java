@@ -7,6 +7,12 @@ import lombok.NoArgsConstructor;
 
 import java.util.List;
 
+/**
+ * [Class that models the basic structure of a Team object.]
+ *
+ * @author John Esteban Alvarez Piedrahita - john.alvarez@sofka.com.co
+ * @version 1.0.0
+ */
 @Data
 @Builder(toBuilder = true)
 @NoArgsConstructor
