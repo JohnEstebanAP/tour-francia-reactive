@@ -42,7 +42,7 @@ public class SaveCyclistUseCase {
 
             return repository.save(cyclist);
         } catch (NumberFormatException exception) {
-            return Mono.error(new IllegalArgumentException("Error Invalid competitor number, this must be fully numeric and 3 digits. ".concat(exception.getMessage())));
+            return Mono.error(new NumberFormatException("Error Invalid competitor number, this must be fully numeric and 3 digits. "));
         }
     }
 

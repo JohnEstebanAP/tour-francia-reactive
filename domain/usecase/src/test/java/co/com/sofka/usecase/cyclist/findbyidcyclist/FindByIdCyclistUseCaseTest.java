@@ -3,7 +3,6 @@ package co.com.sofka.usecase.cyclist.findbyidcyclist;
 import co.com.sofka.model.cyclist.Cyclist;
 import co.com.sofka.model.cyclist.gateways.CyclistRepository;
 import co.com.sofka.model.cyclist.valuesobject.Name;
-import co.com.sofka.usecase.cyclist.updatebyidcyclist.UpdateByIdCyclistUseCase;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
