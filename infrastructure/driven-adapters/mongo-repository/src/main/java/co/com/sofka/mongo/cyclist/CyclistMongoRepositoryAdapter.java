@@ -5,12 +5,17 @@ import co.com.sofka.model.cyclist.gateways.CyclistRepository;
 import co.com.sofka.mongo.helper.AdapterOperations;
 import org.reactivecommons.utils.ObjectMapper;
 import org.springframework.stereotype.Repository;
+import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
+
+import java.text.CharacterIterator;
 
 @Repository
 public class CyclistMongoRepositoryAdapter extends AdapterOperations<Cyclist/* change for domain model */, CyclistDocument/* change for adapter model */, String, CyclistMongoDBRepository>
-implements CyclistRepository
-{
+        implements CyclistRepository{
+
+
+
 
     public CyclistMongoRepositoryAdapter(CyclistMongoDBRepository repository, ObjectMapper mapper) {
         /**
@@ -19,6 +24,28 @@ implements CyclistRepository
          *  Or using mapper.map with the class of the object model
          */
         super(repository, mapper, d -> mapper.map(d, Cyclist.class/* change for domain model */));
+    }
+
+    @Override
+    public Mono<Cyclist> add(Cyclist cyclist) {
+        return repository.save(
+                new CyclistDocument(
+                        cyclist.getTeamId(),
+                        cyclist.getName(),
+                        cyclist.getTeamId(),
+                        cyclist.getNationality()
+                )).flatMap(element -> {
+            cyclist.setTeamId(element.getTeamId());
+            return Mono.just(cyclist);
+        });
+    }
+
+    @Override
+    public Flux<Cyclist> findAll2() {
+        return repository.findAll().flatMap(element -> Flux.just(new Cyclist())
+
+
+        );
     }
 
     @Override

@@ -7,7 +7,11 @@ import reactor.core.publisher.Mono;
 public interface CyclistRepository {
     Mono<Cyclist> save(Cyclist cyclist);
 
+    Mono<Cyclist> add(Cyclist cyclist);
+
     Flux<Cyclist> findAll();
+
+    Flux<Cyclist> findAll2();
 
     Mono<Cyclist> findById(String id);
 

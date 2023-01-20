@@ -40,7 +40,7 @@ public class SaveCyclistUseCase {
             if (cyclistIdHasMax3Num(competitorNumber))
                 return Mono.error(new IllegalArgumentException("Error Invalid competitor number, this must be fully numeric and 3 digits. "));
 
-            return repository.save(cyclist);
+            return repository.add(cyclist);
         } catch (NumberFormatException exception) {
             return Mono.error(new NumberFormatException("Error Invalid competitor number, this must be fully numeric and 3 digits. "));
         }
@@ -72,5 +72,11 @@ public class SaveCyclistUseCase {
             return Boolean.TRUE;
         }
         return Boolean.FALSE;
+    }
+
+
+    {
+
+
     }
 }
